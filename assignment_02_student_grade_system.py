@@ -44,4 +44,30 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
+# 
+# 
+def get_grade(score):
+    if score < 0 or score > 100:
+        return None
+    
+score = int(input("Enter student score (0-100):"))
 
+grade = get_grade(score)
+
+
+if score > 100:
+    print("Error")
+elif score < 0 :
+    print("Error")
+elif score >= 80:
+    print("Grade: A")
+elif score >= 70:
+    print("Grade: B")
+elif score >= 60 :
+    print("Grade; C")
+elif score >= 50 :
+    print("Grade: D")
+elif score < 50 :
+    print("Grade: F")
+else:
+    print("done")
