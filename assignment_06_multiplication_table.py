@@ -37,7 +37,7 @@
 #   ...
 #   1  x  12 =  12
 #   ---------------------------
-#   Multiplication Table for 2:
+#  Multiplication Table for 2:
 #   2  x  1  =  2
 #   ...
 #
@@ -55,3 +55,30 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def multiplication_table():
+    number = input("Enter a number: ")
+
+    if not number.isdigit() or int(number) <= 0:
+        print("Error: Please enter a positive integer.")
+        return
+
+    number = int(number)
+
+    print(f"\nMultiplication Table for {number}:")
+    for i in range(1, 13):
+        print(f"{number} x {i} = {number * i}")
+
+def multiplication_tables():
+    n = input("Enter a positive integer: ")
+
+    if not n.isdigit() or int(n) <= 0:
+        print("Error: Please enter a positive integer.")
+        return
+
+    n = int(n)
+
+    for number in range(1, n + 1):
+        print(f"\nMultiplication Table for {number}:")
+        for i in range(1, 13):
+            print(f"{number} x {i} = {number * i}")
+        print("---------------------------")
